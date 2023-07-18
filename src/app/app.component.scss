@@ -1,0 +1,70 @@
+$color-fg: #ffffff;
+$color-bg: #3030a0;
+
+.app-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #202020;
+}
+
+.pwa-install-message {
+    position: fixed;
+    border: none;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: $color-fg;
+    background-color: $color-bg;
+    align-items: center;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+    p {
+        margin: 0;
+        padding: 0.5rem;
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: row;
+        align-self: right;
+        align-items: right;
+
+        button {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+            color: $color-fg;
+            background-color: $color-bg;
+            margin: 0;
+            padding: 0.5rem;
+            border: 1px solid $color-bg;
+            justify-self: right;
+            text-decoration: underline;
+
+            &:focus-within {
+                outline: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .pwa-install-message {
+        .actions {
+            flex-direction: column;
+        }
+    }
+}

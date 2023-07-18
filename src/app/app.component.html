@@ -1,0 +1,10 @@
+<section class="pwa-install-message" [@slideAnimation]="showInstallMessage ? 'visible' : 'hidden'">
+  <p>Esta apliación se puede instalar en tu dispositivo.</p>
+  <div class="actions">
+    <button (click)="onInstallClick()">Instalar</button>
+    <button (click)="onDismissClick()">Descartar</button>
+  </div>
+</section>
+<div class="app-container">
+  <app-calendar></app-calendar>
+</div>

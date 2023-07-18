@@ -1,0 +1,21 @@
+<h2>{{ nombreMesActual }} {{mesActual.getFullYear()}}</h2>
+<table>
+    <tr>
+        <th>Dom</th>
+        <th>Lun</th>
+        <th>Mar</th>
+        <th>Mié</th>
+        <th>Jue</th>
+        <th>Vie</th>
+        <th>Sáb</th>
+    </tr>
+    <tr *ngFor="let semana of diasCalendario | chunk: 7">
+        <td *ngFor="let dia of semana" [class.fecha-actual]="dia.esFechaActual">
+            <!-- Aplicar clase "fecha-actual" si es la fecha actual -->
+            <ng-container *ngIf="dia.numero !== null; else diaEnBlanco">
+                {{ dia.numero }}
+            </ng-container>
+            <ng-template #diaEnBlanco></ng-template>
+        </td>
+    </tr>
+</table>
