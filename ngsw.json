@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1689723133197,
+  "timestamp": 1689723548303,
   "index": "/calendar-app/index.html",
   "assetGroups": [
     {
@@ -52,7 +52,7 @@
     "/calendar-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/calendar-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/calendar-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/calendar-app/index.html": "4392b4543cbfccf5c1e44e681ae1f9712e5368e2",
+    "/calendar-app/index.html": "fdc46e70e71ee61de1f1538fb12279f06010fff6",
     "/calendar-app/main.fe47c33d1b69b783.js": "10f817b81169c99a7a8a3838c51b96314ae2dba1",
     "/calendar-app/manifest.webmanifest": "edad651dd0be3eccc3b9340a367c514bfe03a855",
     "/calendar-app/polyfills.e36a6da9dee97879.js": "98ad67bfaf19fd158413eac6635ada5bde89d59a",
