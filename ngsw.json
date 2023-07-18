@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "timestamp": 1689723133197,
+  "index": "/calendar-app/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/calendar-app/favicon.ico",
+        "/calendar-app/index.html",
+        "/calendar-app/main.fe47c33d1b69b783.js",
+        "/calendar-app/manifest.webmanifest",
+        "/calendar-app/polyfills.e36a6da9dee97879.js",
+        "/calendar-app/runtime.8667f88a2922e87d.js",
+        "/calendar-app/styles.86515264b36f1627.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/calendar-app/assets/icons/icon-128x128.png",
+        "/calendar-app/assets/icons/icon-144x144.png",
+        "/calendar-app/assets/icons/icon-152x152.png",
+        "/calendar-app/assets/icons/icon-192x192.png",
+        "/calendar-app/assets/icons/icon-384x384.png",
+        "/calendar-app/assets/icons/icon-512x512.png",
+        "/calendar-app/assets/icons/icon-72x72.png",
+        "/calendar-app/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/calendar-app/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/calendar-app/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/calendar-app/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/calendar-app/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/calendar-app/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/calendar-app/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/calendar-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/calendar-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/calendar-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/calendar-app/index.html": "4392b4543cbfccf5c1e44e681ae1f9712e5368e2",
+    "/calendar-app/main.fe47c33d1b69b783.js": "10f817b81169c99a7a8a3838c51b96314ae2dba1",
+    "/calendar-app/manifest.webmanifest": "edad651dd0be3eccc3b9340a367c514bfe03a855",
+    "/calendar-app/polyfills.e36a6da9dee97879.js": "98ad67bfaf19fd158413eac6635ada5bde89d59a",
+    "/calendar-app/runtime.8667f88a2922e87d.js": "5636806d2f6281b62262bc1710b9a6ccbde70cc0",
+    "/calendar-app/styles.86515264b36f1627.css": "d28015791ec84897d5076a506fc637dc5ff64884"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
