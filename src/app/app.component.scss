@@ -1,7 +1,6 @@
-$color-fg: #ffffff;
-$color-bg: #3030a0;
+@use './styles/theme.scss' as theme;
 
-.app-container {
+.app-container {    
     position: absolute;
     top: 0;
     left: 0;
@@ -9,11 +8,12 @@ $color-bg: #3030a0;
     bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: #202020;
+    justify-content: center;    
+    color: theme.$main-fg;
+    background-color: theme.$main-bg;
 }
 
-.pwa-install-message {
+.pwa-install-message {    
     position: fixed;
     border: none;
     z-index: 10;
@@ -23,12 +23,12 @@ $color-bg: #3030a0;
     left: 0;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    color: $color-fg;
-    background-color: $color-bg;
+    flex-direction: row;    
     align-items: center;
     font-size: 0.9rem;
     justify-content: space-between;
+    color: theme.$banner-fg;
+    background-color: theme.$banner-bg;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
     p {
@@ -41,18 +41,23 @@ $color-bg: #3030a0;
         flex-direction: row;
         align-self: right;
         align-items: right;
+        font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
         button {
             display: flex;
             flex-direction: row;
             gap: 0.5rem;
-            color: $color-fg;
-            background-color: $color-bg;
+            color: inherit;
+            background-color: transparent;
             margin: 0;
             padding: 0.5rem;
-            border: 1px solid $color-bg;
+            border: 1px solid transparent;
             justify-self: right;
             text-decoration: underline;
+
+            &:hover {
+                color: theme.$col-link;
+            }
 
             &:focus-within {
                 outline: none;
@@ -61,10 +66,30 @@ $color-bg: #3030a0;
     }
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
     .pwa-install-message {
-        .actions {
-            flex-direction: column;
+        .mobile {
+            display: none,
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .pwa-install-message {        
+        .desktop {
+            display: none,
+        }        
+        .actions {            
+            gap: 0.25rem;       
+            button {
+                margin: 0.25rem 0;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: theme.$component-header-fg;
+                background-color: darken(theme.$component-header-bg, 20);
+                border: 1px solid lighten(theme.$component-header-bg, 5);
+                border-radius: 8px;
+            }
+        }        
     }
 }

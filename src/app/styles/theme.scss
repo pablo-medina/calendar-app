@@ -1,0 +1,22 @@
+$main-fg: #ffffff;
+$main-bg: #202020;
+$component-fg: #000;
+$component-bg: #fff;
+$component-header-fg: #fff;
+$component-header-bg: #303080;
+$component-radius: 12px;
+$col-accent: blue;
+$col-link: #fff;
+
+$banner-fg: #ffffff;
+$banner-bg: #303080;
+
+@mixin component {
+    display: block;
+    color: $component-fg;
+    background-color: $component-bg;
+    border-radius: $component-radius;
+    /* Agregar el borde redondeado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24);
+    padding: 0;    
+}
