@@ -8,7 +8,7 @@
     @include theme.component;
 }
 
-.header {    
+.header {
     color: theme.$component-header-fg;
     background-color: theme.$component-header-bg;
     border-top-left-radius: inherit;
@@ -24,7 +24,6 @@
     }
 }
 
-
 table {
     margin: 0;
     padding: 0.5rem;
@@ -35,28 +34,25 @@ table {
 th,
 td {
     text-align: center;
-    padding: 0.75rem 1rem;
+    padding: 0.65rem 0.75rem;
+
+    &:first-child {
+        color: red;
+    }
 }
 
 th {
+    font-size: 0.75rem;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
-    border: none;    
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #ddd;
+    border: none;
 }
 
 .fecha-actual {
-    color: theme.$col-accent;
     font-weight: 600;
-    border: 1px solid theme.$col-accent;
-    border-radius: 4px;
+    color: theme.$component-header-fg;
+    background-color: theme.$component-header-bg;
+    border-radius: 50%;
 }
