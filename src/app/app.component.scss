@@ -11,6 +11,7 @@
     justify-content: center;    
     color: theme.$main-fg;
     background-color: theme.$main-bg;
+    user-select: none;
 }
 
 .pwa-install-message {    
