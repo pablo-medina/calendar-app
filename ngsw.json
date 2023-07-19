@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1689781872139,
+  "timestamp": 1689782646887,
   "index": "/calendar-app/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/calendar-app/favicon.ico",
         "/calendar-app/index.html",
-        "/calendar-app/main.337a66d24ea73c4e.js",
+        "/calendar-app/main.7cfec245720888c3.js",
         "/calendar-app/manifest.webmanifest",
         "/calendar-app/polyfills.e36a6da9dee97879.js",
         "/calendar-app/runtime.8667f88a2922e87d.js",
@@ -52,8 +52,8 @@
     "/calendar-app/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/calendar-app/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/calendar-app/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/calendar-app/index.html": "55d54e5ac58895f7d819edc1f4aa42eda454fb4d",
-    "/calendar-app/main.337a66d24ea73c4e.js": "772cf07d0d7606191c38e700d4261cec9963fd49",
+    "/calendar-app/index.html": "71cf8045761d071285d19a8ff4dc3fa696529093",
+    "/calendar-app/main.7cfec245720888c3.js": "7c5095dc2199358cfd1762a69e7e04dc84854e38",
     "/calendar-app/manifest.webmanifest": "8bb8a36e07186a9d5a15a03e50a9f82120cc482d",
     "/calendar-app/polyfills.e36a6da9dee97879.js": "98ad67bfaf19fd158413eac6635ada5bde89d59a",
     "/calendar-app/runtime.8667f88a2922e87d.js": "5636806d2f6281b62262bc1710b9a6ccbde70cc0",
