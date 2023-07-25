@@ -1,14 +1,30 @@
 {
   "name": "calendar-app",
   "version": "0.0.0",
+  "main": "index.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=/calendar-app/"
+    "deploy": "ng deploy --base-href=/calendar-app/",
+    "cordova": "cordova",
+    "build:android": "npm-run-all \"ng build --aot\" \"cordova build android\"",
+    "emulate:android": "cordova emulate android",
+    "start:android": "cordova run android",
+    "release:android": "cordova build android --release -- --packageType=apk"
   },
+  "keywords": [
+    "ecosystem:cordova",
+    "calendar",
+    "app",
+    "pwa",
+    "android",
+    "ios"
+  ],
+  "author": "Pablo Medina",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.3.0",
@@ -32,12 +48,22 @@
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "angular-cli-ghpages": "^1.0.6",
+    "cordova": "^11.0.0",
+    "cordova-android": "^10.1.2",
+    "cordova-ios": "^6.3.0",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "npm-run-all": "^4.1.5",
     "typescript": "~4.6.2"
+  },
+  "cordova": {
+    "platforms": [
+      "ios",
+      "android"
+    ]
   }
 }
