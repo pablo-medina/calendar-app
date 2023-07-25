@@ -25,6 +25,9 @@ Una aplicación de calendario usada como ejemplo de PWA, que también puede gene
 
 ***NOTA:*** Si en Windows da un error de comando 'sh' inexistente, seguramente se deba a que no se inicializó el emulador. Esto se puede hacer dentro de las opciones de Android Studio.
 
+### Por dispositivo conectado
+```yarn start:android```
+
 # Release
 ## Android (APK)
 ```yarn release:android```
